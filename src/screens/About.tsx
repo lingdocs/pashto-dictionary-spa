@@ -106,7 +106,7 @@ const About = ({ state }: { state: State }) => {
       <h4>Source Code</h4>
       <p>
         This dictionary app is open sounce. The code is available{" "}
-        <a href="https://github.com/lingdocs/pashto-dictionary">
+        <a href="https://github.com/lingdocs/pashto-dictionary-spa">
           here on GitHub
         </a>{" "}
         and is licensed under a GPLv3 License.
