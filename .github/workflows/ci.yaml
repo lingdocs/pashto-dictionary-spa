@@ -16,9 +16,13 @@ jobs:
         with:
           node-version: 22
           cache: "npm"
-      - run: |
+      - name: Install dependencies
+        run: npm install
+      - name: Build and test
+        run: |
           npm install && \
           export VITE_BUILD_NO=`git rev-parse --short HEAD` && \
           npm run build && \
-          npm run test && \
-          npx netlify deploy --prod --site $NETLIFY_SITE_ID
+          npm run test
+      - name: Deploy
+        run: npx netlify deploy --prod --site $NETLIFY_SITE_ID
