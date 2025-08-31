@@ -8,8 +8,8 @@
   "type": "module",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
-    "@lingdocs/auth-shared": "^0.3.0",
-    "@lingdocs/pashto-inflector": "^9.0.5",
+    "@lingdocs/auth-shared": "^0.4.0",
+    "@lingdocs/pashto-inflector": "^9.0.6",
     "bootstrap": "4.6.1",
     "classnames": "^2.5.1",
     "cron": "^4.3.3",
