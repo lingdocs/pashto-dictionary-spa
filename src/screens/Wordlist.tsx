@@ -416,7 +416,7 @@ function Wordlist({
                   value: "browse",
                 },
                 {
-                  label: "Review" + textBadge(toReview.length),
+                  label: "SRS Review" + textBadge(toReview.length),
                   value: "review",
                 },
               ]}
