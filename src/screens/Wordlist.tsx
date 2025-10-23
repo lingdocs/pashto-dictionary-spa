@@ -164,6 +164,7 @@ function Wordlist({
   }
   async function handleGetWordlistCSV() {
     const blob = await getWordlistCsv(wordlistDownloadSort);
+    console.log({ blob });
     setShowingDownload(false);
     var a = document.createElement("a");
     document.body.appendChild(a);
@@ -372,6 +373,7 @@ function Wordlist({
       </div>
     );
   }
+  console.log({ Modal });
   return (
     <div className="width-limiter" style={{ marginBottom: "120px" }}>
       <Helmet>
@@ -495,7 +497,7 @@ function Wordlist({
         </>
       )}
       <Modal show={showingDownload} onHide={() => setShowingDownload(false)}>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton={false}>
           <Modal.Title>
             <i className={`fas fa-download mr-1`} /> Download Wordlist CSV
           </Modal.Title>
@@ -534,7 +536,7 @@ function Wordlist({
         </Modal.Footer>
       </Modal>
       <Modal show={showingCleanup} onHide={handleCloseCleanup}>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton={false}>
           <Modal.Title>
             <i className={`fas fa-${cleanupIcon} mr-1`} /> Wordlist Cleanup
           </Modal.Title>
