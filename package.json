@@ -9,7 +9,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@lingdocs/auth-shared": "^0.4.2",
-    "@lingdocs/pashto-inflector": "^9.0.6",
+    "@lingdocs/pashto-inflector": "^9.0.7",
     "bootstrap": "4.6.1",
     "classnames": "^2.5.1",
     "cron": "^4.3.3",
